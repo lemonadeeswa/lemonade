@@ -21,7 +21,7 @@ if __name__ == '__main__':
     parser.add_argument('--embedding_tool', type=str, default='openai', help='Embedding tool')
     parser.add_argument('--compression_style', type=str, default='autoencoder', help='Dimension compression method')
     parser.add_argument('--is_ct', type=str, default='true', help='Whether to import counterfactual samples: true or false?')
-    parser.add_argument('--slm', type=str, default='/home/dwz/llm_cache/deberta-v3-base/', help='SLM path')
+    parser.add_argument('--slm', type=str, default='', help='SLM path')
     parser.add_argument('--emb_prompt', type=str, default='Summarize this entity record: ', help='Embedding prompt')
     parser.add_argument('--ct_prompt', type=str, default='normal', help='CT prompt type')
     parser.add_argument('--ct_llm', type=str, default='gpt-4o-mini', help='CT LLM')
